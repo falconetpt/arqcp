@@ -6,4 +6,5 @@ int main(void) {
 	printf("LONG INT: %d\n", sizeof(long int));
 	printf("FLOAT: %d\n", sizeof(float));
 	printf("DOUBLE: %d\n", sizeof(double));
+	return 0;
 }

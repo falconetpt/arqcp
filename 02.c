@@ -7,6 +7,7 @@ int string_to_it(char *str);
 int main(void) {
 	char *str = "12345";
 	printf("%d\n", string_to_it(str));
+	return 0;
 }
 
 int string_to_it(char *str) {

@@ -3,7 +3,7 @@
 #include <malloc.h>
 #define ZERO_ASCII 48
 
-int string_to_it(char *str);
+int string_to_int(char *str);
 
 int main(void) {
 	char* s1 = malloc(sizeof(char) *30);
@@ -12,12 +12,13 @@ int main(void) {
 	scanf("%s", s1);
 	printf("Enter a number: \n");
 	scanf("%s", s2);
-	int num1 = string_to_it(s1);
-	int num2 = string_to_it(s2);
+	int num1 = string_to_int(s1);
+	int num2 = string_to_int(s2);
 	printf("num1: %d num2: %d -> Average: %.2f\n", num1, num2, (num1 + num2)/2.0);
+	return 0;
 }
 
-int string_to_it(char *str) {
+int string_to_int(char *str) {
 	int i;
 	int str_length = strlen(str);
 	int result = 0;
