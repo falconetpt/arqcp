@@ -1,1 +1,1 @@
-void replace_lower_Case(char *str);
+void replace_lower_Case(char str[]);
