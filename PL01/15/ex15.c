@@ -12,6 +12,7 @@ int main(void) {
 	print_array(vec, NUMBER_ELEMENTS);
 	
 	int number_sets = count_number_sets(vec, NUMBER_ELEMENTS);
-		
+	
+	printf("\n--\n%d\n", number_sets);	
 	return 0;
 }
