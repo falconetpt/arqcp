@@ -7,11 +7,11 @@ int palindrome(char str[]) {
 	int final_index = strlen(str) -1;
 	
 	while(initial_index < final_index) {
-		if(*(str+initial_index) == ' ') {
+		if(!isalpha(*(str+initial_index))) {
 			initial_index++;
 		}
 		
-		if(*(str+final_index) == ' ') {
+		if(!isalpha(*(str+final_index))) {
 			final_index--;
 		}
 		
