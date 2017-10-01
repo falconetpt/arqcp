@@ -1,6 +1,7 @@
 #include <string.h>
 
 int is_equal_char(char *str1, char *str2) {
+	int length_str1 = strlen(str1);
 	int i;
 	for(i = 0; i < length_str1; i++) {
 		if(*(str1+i) != *(str2 + i)) {
@@ -21,9 +22,9 @@ char* where_exists(char *str1, char *str2) {
 	
 	int i;
 	
-	for(i = 0; i < strlen2 - strlen1; i++) {
-		if(is_equal_char(str1, *(str2 + 1)) == 1) {
-			return i;
+	for(i = 0; i < length_str2 - length_str1 + 1; i++) {
+		if(is_equal_char(str1, (str2 + i)) == 1) {
+			return (str2 + i);
 		}
 	}
 	
