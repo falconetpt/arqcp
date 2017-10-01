@@ -1,1 +1,1 @@
-int order_crescent_order(int *vec);
+int set_verification_ascending(int *vec);
