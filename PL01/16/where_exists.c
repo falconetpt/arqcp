@@ -17,7 +17,7 @@ char* where_exists(char *str1, char *str2) {
 	int length_str2 = strlen(str2);
 	
 	if(length_str1 > length_str2) {
-		return 0;
+		return NULL;
 	}
 	
 	int i;
