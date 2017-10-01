@@ -11,7 +11,7 @@ int main(void) {
 	printf("-- Elements --\n");
 	print_array(vec, NUMBER_ELEMENTS);
 	
-	int number_sets;
+	int number_sets = count_number_sets(vec, NUMBER_ELEMENTS);
 		
 	return 0;
 }
