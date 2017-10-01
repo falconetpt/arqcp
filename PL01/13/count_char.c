@@ -3,7 +3,7 @@
 void char_index(char str[], char c, int *vec) {
 	int length = strlen(str);
 	int i;
-	int size;
+	int size=0;
 	
 	for(i = 0; i < length; i++) {
 		if(*(str+i) == c) {
@@ -12,7 +12,8 @@ void char_index(char str[], char c, int *vec) {
 		}
 	}
 	
-	for(i = size + 1; i < length; i++) {
+	//clear next lines with no values
+	for(i = size; i < length; i++) {
 		*(vec+i) = -1;
 	}
 }
