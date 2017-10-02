@@ -1,1 +1,1 @@
-void compress(short *numbers, unsigned int *vec, int sizeShort);
+void compress(short *numbers, int *vec, int sizeShort);

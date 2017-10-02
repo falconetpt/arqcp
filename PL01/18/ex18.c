@@ -1,10 +1,18 @@
 #include "compress.h"
-#include "print_array.h"
 
 int main(void) {
-	short numbers = {1,2,3,4};
-	int n = sizeof(numbers) / sizeof(int);
-	unsigned int compressed[n/2];
+	short numbers[] = {1,7,3,4, 8, 12};
+	int n = sizeof(numbers) / sizeof(short);
+	int compressed[n/2];
+	
+	printf("Compressed to:\n");
 	compress(numbers, compressed, n);
-	printf("%d\n", *(compressed+0));
+	int i;
+	for(i =0; i < n/2; i++) {
+		printf("%d\n", *(compressed+i));
+	}
+	
+	printf("Decompressed:\n");
+	decompress(compressed, n/2);
+	return 0;
 }
