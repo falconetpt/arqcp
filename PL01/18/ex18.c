@@ -3,7 +3,7 @@
 int main(void) {
 	short numbers[] = {1,7,3,4, 8, 12};
 	int n = sizeof(numbers) / sizeof(short);
-	int compressed[n/2];
+	unsigned int compressed[n/2];
 	
 	printf("Compressed to:\n");
 	compress(numbers, compressed, n);

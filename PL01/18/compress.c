@@ -1,3 +1,4 @@
+#include <stdio.h>
 
 void compress(short *numbers, int *vec, int size) {
 	int i;
