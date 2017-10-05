@@ -30,3 +30,8 @@ char* where_exists(char *str1, char *str2) {
 	
 	return NULL;
 }
+
+char *find_word(char *str, char *word, char *initial_addr) {
+	return where_exists(word, initial_addr);
+}
+

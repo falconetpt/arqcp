@@ -1,5 +1,4 @@
 #include <string.h>
-#include "where_exists.h"
 
 int is_equal_char(char *str1, char *str2) {
 	int length_str1 = strlen(str1);
