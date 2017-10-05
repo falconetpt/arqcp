@@ -8,10 +8,10 @@ find_all.o:
 	gcc -c find_all.c -o find_all.o
 
 find_word.o:
-	gcc -c find_word.c -c find_word.o
+	gcc -c find_word.c -o find_word.o
 
 run: exercise
 	./exercise	
 
 clear:
-	ex20.o find_all.o find_word.o
+	rm -f ex20.o find_all.o find_word.o
